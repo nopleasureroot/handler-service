@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    consumer-default-topic: ${DEFAULT_CONSUMER_TOPIC_NAME:scraper_handler_row-data-event }
+    producer-default-topic: ${DEFAULT_PRODUCER_TOPIC_NAME:handler_analyzer_processed-data-event}
+    consumer:
+      group-id: ${MESSAGE_CONSUMER_GROUP:app.handler}
+      bootstrap-servers: ${BOOTSTRAP_HOST:localhost:29092}
