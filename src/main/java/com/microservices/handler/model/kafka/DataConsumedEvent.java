@@ -8,6 +8,6 @@ import java.util.UUID;
 
 public record DataConsumedEvent(
     @NotNull UUID uuid,
-    @NotNull JsonNode responseBody,
-    ShopName shopName) {
+    @NotNull JsonNode responseBody
+    ) {
 }

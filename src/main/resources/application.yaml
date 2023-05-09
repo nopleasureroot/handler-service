@@ -5,3 +5,6 @@ spring:
     consumer:
       group-id: ${MESSAGE_CONSUMER_GROUP:app.handler}
       bootstrap-servers: ${BOOTSTRAP_HOST:localhost:29092}
+
+server:
+  port: 8084

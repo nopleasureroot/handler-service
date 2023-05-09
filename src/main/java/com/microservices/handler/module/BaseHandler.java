@@ -16,7 +16,7 @@ public class BaseHandler implements Handler {
     @KafkaListener(topics = "${spring.kafka.consumer-default-topic}", groupId = "${spring.kafka.consumer.group-id}",
         containerFactory = "kafkaMessageContainerFactory")
     public void handle(@Payload DataConsumedEvent event) {
-       switch (event.shopName()) {
+       switch (1) {
            default -> lamodaHandler.handle(event);
        }
     }

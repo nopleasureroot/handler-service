@@ -3,5 +3,5 @@
 #
 FROM openjdk:17
 COPY ./target/handler-0.0.1-SNAPSHOT.jar ./target/handler-0.0.1-SNAPSHOT.jar
-EXPOSE 8083
+EXPOSE 8084
 ENTRYPOINT ["java","-jar","./target/handler-0.0.1-SNAPSHOT.jar"]
